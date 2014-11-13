@@ -23,6 +23,16 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
+    
+    UIActivity *activity = [[AQSFacebookWithSDKActivity alloc] init];
+    NSArray *items = @[
+                       [NSURL URLWithString:@"http://google.com/"]
+                       ];
+    
+    UIActivityViewController *controller = [[UIActivityViewController alloc] initWithActivityItems:items applicationActivities:@[activity]];
+    controller.excludedActivityTypes = @[UIActivityTypePostToFacebook];
+    
+    [self presentViewController:controller animated:YES completion:NULL];
 }
 
 - (void)didReceiveMemoryWarning {
