@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 
+#import "AQSFacebookWithSDKActivity.h"
+
 @interface ViewController ()
 
 @end
@@ -17,6 +19,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    
+    UIActivity *activity = [[AQSFacebookWithSDKActivity alloc] init];
+    NSArray *items = @[
+                       [NSURL URLWithString:@"http://google.com/"]
+                       ];
+    
+    UIActivityViewController *controller = [[UIActivityViewController alloc] initWithActivityItems:items applicationActivities:@[activity]];
+    
+    [self presentViewController:controller animated:YES completion:NULL];
 }
 
 - (void)didReceiveMemoryWarning {

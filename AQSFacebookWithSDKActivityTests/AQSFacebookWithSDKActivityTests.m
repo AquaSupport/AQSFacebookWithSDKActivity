@@ -8,8 +8,15 @@
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
+#import <OCMock.h>
+
+#import <FacebookSDK.h>
+
+#import "AQSFacebookWithSDKActivity.h"
 
 @interface AQSFacebookWithSDKActivityTests : XCTestCase
+
+@property AQSFacebookWithSDKActivity *activity;
 
 @end
 
@@ -25,16 +32,25 @@
     [super tearDown];
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    XCTAssert(YES, @"Pass");
+- (void)testItsActivityCategoryIsShare {
+    XCTAssertTrue(AQSFacebookWithSDKActivity.activityCategory == UIActivityCategoryShare);
 }
 
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
+- (void)testItReturnsItsImage {
+    XCTAssertNotNil(_activity.activityImage);
+}
+
+- (void)testItReturnsItsType {
+    XCTAssertTrue([_activity.activityType isEqualToString:@"org.openaquamarine.facebook.sdk"]);
+}
+
+- (void)testItReturnsItsTitle {
+    XCTAssertTrue([_activity.activityTitle isEqualToString:@"Facebook"]);
+}
+
+- (void)testItAlwaysAbleToPerformActivity {
+    NSArray *activityItems = @[@"hoge", [NSURL URLWithString:@"http://google.com/"]];
+    XCTAssertTrue([_activity canPerformWithActivityItems:activityItems]);
 }
 
 @end

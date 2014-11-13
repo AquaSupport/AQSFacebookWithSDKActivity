@@ -16,6 +16,8 @@
 		D45E8FE01A11FC46009EA945 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D45E8FDF1A11FC46009EA945 /* Images.xcassets */; };
 		D45E8FE31A11FC46009EA945 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D45E8FE11A11FC46009EA945 /* LaunchScreen.xib */; };
 		D45E8FEF1A11FC46009EA945 /* AQSFacebookWithSDKActivityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D45E8FEE1A11FC46009EA945 /* AQSFacebookWithSDKActivityTests.m */; };
+		D45E93C81A149121009EA945 /* AQSFacebookWithSDKActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = D45E93C71A149121009EA945 /* AQSFacebookWithSDKActivity.m */; };
+		D45E93CA1A14912D009EA945 /* AQSFacebookWithSDKActivity.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D45E93C91A14912D009EA945 /* AQSFacebookWithSDKActivity.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,9 @@
 		D45E8FE81A11FC46009EA945 /* AQSFacebookWithSDKActivityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AQSFacebookWithSDKActivityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D45E8FED1A11FC46009EA945 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D45E8FEE1A11FC46009EA945 /* AQSFacebookWithSDKActivityTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AQSFacebookWithSDKActivityTests.m; sourceTree = "<group>"; };
+		D45E93C61A149121009EA945 /* AQSFacebookWithSDKActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQSFacebookWithSDKActivity.h; sourceTree = "<group>"; };
+		D45E93C71A149121009EA945 /* AQSFacebookWithSDKActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQSFacebookWithSDKActivity.m; sourceTree = "<group>"; };
+		D45E93C91A14912D009EA945 /* AQSFacebookWithSDKActivity.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AQSFacebookWithSDKActivity.xcassets; sourceTree = "<group>"; };
 		D55560E9FEF07159313F3A27 /* Pods-AQSFacebookWithSDKActivity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AQSFacebookWithSDKActivity.release.xcconfig"; path = "Pods/Target Support Files/Pods-AQSFacebookWithSDKActivity/Pods-AQSFacebookWithSDKActivity.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -155,6 +160,9 @@
 		D45E93C51A14902C009EA945 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				D45E93C61A149121009EA945 /* AQSFacebookWithSDKActivity.h */,
+				D45E93C71A149121009EA945 /* AQSFacebookWithSDKActivity.m */,
+				D45E93C91A14912D009EA945 /* AQSFacebookWithSDKActivity.xcassets */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -244,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D45E8FDE1A11FC46009EA945 /* Main.storyboard in Resources */,
+				D45E93CA1A14912D009EA945 /* AQSFacebookWithSDKActivity.xcassets in Resources */,
 				D45E8FE31A11FC46009EA945 /* LaunchScreen.xib in Resources */,
 				D45E8FE01A11FC46009EA945 /* Images.xcassets in Resources */,
 			);
@@ -327,6 +336,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D45E8FDB1A11FC46009EA945 /* ViewController.m in Sources */,
+				D45E93C81A149121009EA945 /* AQSFacebookWithSDKActivity.m in Sources */,
 				D45E8FD81A11FC46009EA945 /* AppDelegate.m in Sources */,
 				D45E8FD51A11FC46009EA945 /* main.m in Sources */,
 			);
